@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
  config.vm.synced_folder ".", "/home/vagrant/app"          
 
 # running provisioning script with just 'vagrant up' without ssh into VM
- config.vm.provision "shell", path: "./app/provision.sh"
+ config.vm.provision "shell", path: "./app/script.sh"
 
 end
 ```
