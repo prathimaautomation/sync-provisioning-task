@@ -10,10 +10,11 @@ Vagrant.configure("2") do |config|
  config.hostsupdater.aliases = ["development.local"]
 
 # Sync folder from OS to VM
-               # "." means current location -  into/inside VM
+                       # "." means current location -  into/inside VM
  config.vm.synced_folder ".", "/home/vagrant/app"          
 
+ 
 # running provisioning script with just 'vagrant up' without ssh into VM
- config.vm.provision "shell", path: "./app/script.sh"
+config.vm.provision "shell", path: "./app/script.sh"
 
 end
