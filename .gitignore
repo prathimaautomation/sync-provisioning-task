@@ -1,2 +1,7 @@
 .vagrant/
 ubuntu-xenial-16.04-cloudimg-console.log
+
+#starter-code/
+
+node_modules/
+package-lock.json
